@@ -1,0 +1,2 @@
+# Dummikub
+Rummikub solver algorithm
