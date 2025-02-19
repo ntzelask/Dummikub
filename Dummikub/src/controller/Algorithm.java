@@ -27,16 +27,21 @@ public class Algorithm {
 		} else if (board.getBoard().isEmpty()) {
 			return;
 		}
-		
-		for(int i = 0; i < hand.size(); i++) {
-			for(int j = 0; j < board.getBoard().size(); j++) {
-				Chip h = hand.get(i);
-				Chip b = board.getBoard().get(j);
-				
-				if(h.getNum() == b.getNum() || h.getNum() == b.getNum()+ 1 || h.getNum() == b.getNum() - 1) {
-					playable.add(h);
-				}
-			}
+
+		for (int i = 0; i < hand.size(); i++) {
+			Chip h = hand.get(i);
+			
 		}
+
+//		for (int i = 0; i < hand.size(); i++) {
+//			for (int j = 0; j < board.getBoard().size(); j++) {
+//				Chip h = hand.get(i);
+//				Chip b = board.getBoard().get(j);
+//
+//				if (h.getNum() == b.getNum() || h.getNum() == b.getNum() + 1 || h.getNum() == b.getNum() - 1) {
+//					playable.add(h);
+//				}
+//			}
+//		}
 	}
 }
